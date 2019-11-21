@@ -10,3 +10,6 @@ version = "0.1.0"
 packages = [
   "src/sagittal_average",
 ]
+
+[project.scripts]
+sagittal_average_run = "sagittal_average.command:process"
