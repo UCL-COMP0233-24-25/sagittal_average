@@ -10,3 +10,4 @@ Welcome to sagittal-average's documentation!
    :maxdepth: 2
    :caption: Contents:
 
+   API <api/modules>

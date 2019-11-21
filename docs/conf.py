@@ -14,7 +14,12 @@ release = '0.1'
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-extensions = []
+extensions = [
+    'sphinx.ext.autodoc',  # Support automatic documentation
+    'sphinx.ext.coverage', # Automatically check if functions are documented
+    'sphinx.ext.mathjax',  # Allow support for algebra
+    'sphinx.ext.viewcode', # Include the source code in documentation
+]
 
 templates_path = ['_templates']
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
