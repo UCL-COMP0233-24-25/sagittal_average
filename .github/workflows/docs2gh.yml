@@ -1,0 +1,41 @@
+name: Building documentation as gh-pages
+on:
+  push:
+    branches:
+    - main
+
+jobs:
+  build_docs:
+    name: documentation
+    runs-on: ubuntu-latest # ${{ matrix.platform }}
+
+    steps:
+      # Checkout the repository and setups the machine to use python
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # otherwise, you will failed to push refs to dest repo
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: 3.13
+      - name: generates API documentation and build docs
+        # You may not run this step if done locally and the documentation was updated manually
+        # (and those files committed to the repository)
+        run: |
+          pip install ".[doc]"
+          sphinx-apidoc -o ./docs/api ./src/sagittal_average
+          cd docs
+          make html
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        # Needs change the repository setting (Go to Settings > Actions > General > Workflow permissions)
+        # - Select "Read and write permissions" to be able to write in the gh-pages branch
+        with:
+          publish_branch: gh-pages
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: docs/_build/html
+          force_orphan: true
+        # First time it builds and creates the gh-pages, needs to activate the deployment as
+        # Go to Settings > Pages and select from Build and deployment:
+        # - Source: Deploy from a branch
+        # - Branch: `gh-pages` and `/(root)`

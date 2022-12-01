@@ -19,6 +19,7 @@ extensions = [
     'sphinx.ext.coverage', # Automatically check if functions are documented
     'sphinx.ext.mathjax',  # Allow support for algebra
     'sphinx.ext.viewcode', # Include the source code in documentation
+    'sphinx.ext.githubpages', # Publish HTML docs in GitHub Pages¶
 ]
 
 templates_path = ['_templates']

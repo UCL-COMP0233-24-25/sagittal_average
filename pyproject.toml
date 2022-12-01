@@ -53,6 +53,10 @@ dev = [
     "pytest >= 8",
     "pytest-cov",
 ]
+doc = [
+    "sphinx",
+]
+all = ["sagittal_average[dev,doc]"]
 
 [project.urls]
 Documentation = "https://UCL-COMP0233-24-25.github.io/sagittal_average/"
