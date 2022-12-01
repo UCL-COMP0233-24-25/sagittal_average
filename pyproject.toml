@@ -15,3 +15,9 @@ packages = [
 
 [project.scripts]
 sagittal_average_run = "sagittal_average.command:process"
+
+[project.optional-dependencies]
+dev = [
+    "pytest >= 8",
+    "pytest-cov",
+]
