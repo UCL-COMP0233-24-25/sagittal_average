@@ -62,3 +62,6 @@ all = ["sagittal_average[dev,doc]"]
 Documentation = "https://UCL-COMP0233-24-25.github.io/sagittal_average/"
 Repository = "https://github.com/UCL-COMP0233-24-25/sagittal_average.git"
 Issues = "https://github.com/UCL-COMP0233-24-25/sagittal_average/issues"
+
+[tool.pytest.ini_options]
+addopts = "--cov='sagittal_average' --cov-report html --doctest-modules"
