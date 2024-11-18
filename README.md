@@ -6,7 +6,7 @@ This is a very simple file used as part of the UCL
 ## Installation
 
 ```bash
-pip install git+git://github.com/Jennivine/sagittal_average
+pip install git+https://github.com/Jennivine/sagittal_average
 ```
 
 ## Usage
