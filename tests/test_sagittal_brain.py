@@ -16,4 +16,4 @@ np.savetxt("brain_average_output.csv", data_output, fmt='%d', delimiter=',')
 expected_result = np.loadtxt("brain_average_output.csv", delimiter=',')
 run_averages("../src/sagittal_brain/brain_sample.csv", "../src/sagittal_brain/brain_average.csv")
 actual_result = np.loadtxt("../src/sagittal_brain/brain_average.csv", delimiter=',')
-assert  np.all(actual_result) == np.all(expected_result), "Files are not equal"
+np.testing.assert_array_equal(actual_result, expected_result)
