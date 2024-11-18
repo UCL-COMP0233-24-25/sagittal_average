@@ -6,9 +6,13 @@
 Welcome to brain_averages's documentation!
 ==========================================
 
+This package provides the tools to analyse CT and MRI scan data.
+
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
+
+   /content/brain_averages_docs.rst
 
 
 
