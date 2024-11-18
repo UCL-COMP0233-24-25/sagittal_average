@@ -1,7 +1,10 @@
 [project]
 name = "sagittal_average"         # Name of the package
-version = "0.1.1"                 # Version of the package
+version = "0.1.2"                 # Version of the package
 description = "Brain stuff"
+dependencies = [                  # Adding dependency installation
+    "numpy", "pathlib", "argparse"  
+]
 readme = "README.md"              # Path to the README file
 requires-python = ">=3.8"         # Minimum Python version
 license = {file = "LICENSE"}      # License file or name
@@ -9,6 +12,9 @@ license = {file = "LICENSE"}      # License file or name
 [build-system]
 requires = ["setuptools>=42", "wheel"]  # Tools needed to build the package
 build-backend = "setuptools.build_meta" # Build backend
+
+[project.scripts]
+sagittal_average_run = "sagittal_average.command:process" # Creating a run command
 
 [tool.hatch.build.targets.wheel]
 packages = [
