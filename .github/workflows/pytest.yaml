@@ -18,7 +18,7 @@ jobs:
           python-version: ${{ matrix.python-version }}
       - name: Install dependencies
         run: |
-          python -m pip install --upgrade pip pytest numpy
+          python -m pip install --upgrade pip pytest numpy git+https://github.com/Jennivine/sagittal_average
       - name: Test with pytest
         run: |
           pytest
