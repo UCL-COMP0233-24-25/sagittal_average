@@ -3,7 +3,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "Sagittal Brain Averages"
+name = "Sagittal_Brain_Averages"
 version = "0.1.0"
 
 [tool.hatch.build.targets.wheel]
