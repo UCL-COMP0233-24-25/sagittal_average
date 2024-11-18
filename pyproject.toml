@@ -3,7 +3,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "Sagittal_average"
+name = "sagittal_average"
 version = "0.1.0"
 dependencies = ["numpy",]
 
