@@ -1,7 +1,7 @@
 import unittest
 import numpy as np
 from pathlib import Path
-from sagittal_avg import run_averages  # Adjust import path as needed
+from src.sagittal_avg.sagittal_brain import run_averages  # Adjust import path as needed
 
 class TestRunAverages(unittest.TestCase):
     def setUp(self):
