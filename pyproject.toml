@@ -5,6 +5,13 @@ build-backend = "hatchling.build"
 [project]
 name = "Sagittal_Brain_Averages"
 version = "0.1.0"
+dependencies = [
+  "numpy", 
+  "argparse"
+]
+
+[project.scripts]
+sagittal_average_run = "sagittal_brain.command:process"
 
 [tool.hatch.build.targets.wheel]
 packages = [
