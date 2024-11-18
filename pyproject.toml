@@ -1,0 +1,11 @@
+[build-system]
+requires = ["setuptools", "wheel", "numpy"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sagittal_brain"
+version = "0.1.0"
+dependencies = ["numpy"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
