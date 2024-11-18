@@ -22,6 +22,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install numpy
           pip install pytest
+          pip install -e .
           # FIXME Is there anything else that needs to be installed?
       - name: Test with pytest
         run: |
