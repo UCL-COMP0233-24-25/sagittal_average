@@ -10,6 +10,9 @@ dependencies=[
     "numpy",
     ]
 
+[project.scripts]
+brain_average = "brain_average.command:process"
+
 [tool.hatch.build.targets.wheel]
 packages = [
   "src/brain_average",
