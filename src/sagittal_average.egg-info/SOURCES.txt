@@ -1,0 +1,8 @@
+pyproject.toml
+src/sagittal_average.egg-info/PKG-INFO
+src/sagittal_average.egg-info/SOURCES.txt
+src/sagittal_average.egg-info/dependency_links.txt
+src/sagittal_average.egg-info/requires.txt
+src/sagittal_average.egg-info/top_level.txt
+src/sagittal_brain/generate.py
+src/sagittal_brain/sagittal_brain.py
