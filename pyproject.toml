@@ -1,0 +1,22 @@
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "Sagittal-Brain"
+version = "1.0.0"
+dependencies = [
+    "numpy",
+]
+
+[project.scripts]
+greet = "sagittal_brain.command:process"
+
+[tool.hatch.build.targets.wheel]
+packages = [
+  "src/sagittal_brain",
+]
+
+[dependencies]
+python = "^3.9"

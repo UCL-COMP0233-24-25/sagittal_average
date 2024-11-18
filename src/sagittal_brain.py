@@ -2,6 +2,7 @@ from argparse import ArgumentParser, ArgumentDefaultsHelpFormatter
 
 import numpy as np
 
+from pathlib import Path
 
 def run_averages(file_input='brain_sample.csv', file_output='brain_average.csv'):
     """
@@ -23,11 +24,16 @@ def run_averages(file_input='brain_sample.csv', file_output='brain_average.csv')
 
 
 if __name__ == "__main__":
+
+     # Use pathlib to define paths
+    default_input_path = Path("data") / "brain_sample.csv"
+    default_output_path = Path("data") / "brain_average.csv"
+
     parser = ArgumentParser(description="Calculates the average for each sagittal-horizontal plane.",
                             formatter_class=ArgumentDefaultsHelpFormatter)
-    parser.add_argument('file_input', nargs='?', default="brain_sample.csv",
+    parser.add_argument('file_input', nargs='?',default=default_input_path,
                         help="Input CSV file with the results from scikit-brain binning algorithm.")
-    parser.add_argument('--file_output', '-o', default="brain_average.csv",
+    parser.add_argument('--file_output', '-o', default=default_output_path,
                         help="Name of the output CSV file.")
     arguments = parser.parse_args()
 
