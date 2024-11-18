@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: sagittal_average
+Version: 0.1.0
+Summary: A Python package for calculating the sagittal plane average.
+Author-email: Charlene Bultoc <charlene@example.com>
+Requires-Python: >=3.8
+Requires-Dist: numpy

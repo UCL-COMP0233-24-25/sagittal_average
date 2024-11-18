@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sagittal_average"
+version = "0.1.0"
+description = "A Python package for calculating the sagittal plane average."
+authors = [
+    { name = "Charlene Bultoc", email = "charlene@example.com" }
+]
+
+requires-python = ">=3.8"
+dependencies = [
+    "numpy",
+]
+[tool.hatch.build.targets.wheel]
+packages = [
+  "src/sagittal_brain",
+]
