@@ -4,7 +4,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "BrainAverage"
+name = "brain_average"
 version = "0.1.0"
 dependencies=[
     "numpy",
