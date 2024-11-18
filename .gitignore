@@ -196,3 +196,6 @@ pyrightconfig.json
 
 ##Ignore the virtual environment
 /myenv
+
+##Ignore Data Files
+.csv
