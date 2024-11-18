@@ -12,6 +12,7 @@ def run_averages(file_input='brain_sample.csv', file_output='brain_average.csv')
     The result is the average for each sagittal/horizontal plane (rows)
     """
     # Open the file to analyse
+    
     planes = np.loadtxt(file_input, dtype=int,  delimiter=',')
 
     # Calculates the averages through the sagittal/horizontal planes
