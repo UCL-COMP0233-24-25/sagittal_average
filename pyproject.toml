@@ -10,9 +10,7 @@ authors = [
     { name = "Your Name", email = "your_email@example.com" }
 ]
 license = { text = "MIT" }
-dependencies = []
-classifiers = [
-    "Programming Language :: Python :: 3",
-    "License :: OSI Approved :: MIT License",
-    "Operating System :: OS Independent"
-]
+dependencies = ["numpy"]  # 添加依赖
+
+[project.scripts]
+sagittal_average_run = "sagittal_average.command:main"
