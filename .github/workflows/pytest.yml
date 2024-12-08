@@ -1,0 +1,27 @@
+name: Installation, test and coverage
+on: [push]
+
+jobs:
+  test:
+    # Multiple platforms have been disabled because Windows and OSx needs more credits than what we have.
+    # Don't use them during class or the assignment
+    name: py${{ matrix.python-version }} # ${{ matrix.platform }}
+    runs-on: ubuntu-latest # ${{ matrix.platform }}
+    strategy:
+      matrix:
+        # platform: [ubuntu-latest, windows-latest, macos-latest]
+        python-version: [3.9, 3.13] # Oldest and newest release supported: https://devguide.python.org/versions/
+
+    steps:
+      # Checkout the repository and setups the machine to use python
+      - uses: actions/checkout@v4
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Install package with dev dependencies
+        run: |
+          pip install ".[dev]"
+      - name: Run tests
+        run: pytest --cov=./

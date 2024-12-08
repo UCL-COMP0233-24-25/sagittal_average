@@ -1,0 +1,38 @@
+[project]
+name = "sagittal_average"
+description = "Calculate the averages through a sagittal plane easily."
+version = "0.1.0"
+readme = { file = "README.md", content-type = "text/markdown" }
+license = { file = "LICENSE" }
+
+authors = [
+  { name = "Charlene Bultoc", email = "c.bultoc@neurolab.ac.uk" },
+  { name = "ARC Team", email = "ARC.Education@ucl.ac.uk" },
+]
+maintainers = [
+  { name = "ARC Team", email = "ARC.Education@ucl.ac.uk" },
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Science/Research",
+  "Topic :: Scientific/Engineering :: Bio-Informatics",
+  "License :: OSI Approved :: BSD License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.12",
+  "Private :: Do Not Upload",
+]
+dependencies = [
+  "numpy",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest >= 8",
+  "pytest-cov",
+]
+
+[project.urls]
+Documentation = "https://UCL-COMP0233-24-25.github.io/sagittal_average/"
+Repository = "https://github.com/UCL-COMP0233-24-25/sagittal_average.git"
+Issues = "https://github.com/UCL-COMP0233-24-25/sagittal_average/issues"
