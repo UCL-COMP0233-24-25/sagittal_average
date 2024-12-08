@@ -1,0 +1,24 @@
+# Python
+*.py[cod]
+__pycache__/
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+*.sqlite3
+
+# Conda
+.conda/
+.env/
+.env.bak
+.venv/
+conda-meta/
+*.condarc
+*.env
+*.yaml
+
+# VSCode
+.vscode/
+.history/
+*.code-workspace
