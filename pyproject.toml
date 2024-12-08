@@ -1,45 +1,35 @@
-
 [project]
 name = "sagittal_average"
 description = "Calculate the averages through a sagittal plane easily."
 version = "0.1.0"
 readme = { file = "README.md", content-type = "text/markdown" }
 license = { file = "LICENSE" }
-license-expression = 'BSD-3-clause'
+
 authors = [
-  {name = "Charlene Bultoc", email = "c.bultoc@neurolab.ac.uk"},
-  {name = "ARC Team", email = "ARC.Education@ucl.ac.uk"},
+  { name = "Charlene Bultoc", email = "c.bultoc@neurolab.ac.uk" },
+  { name = "ARC Team", email = "ARC.Education@ucl.ac.uk" },
 ]
 maintainers = [
-  {name = "ARC Team", email = "ARC.Education@ucl.ac.uk"},
+  { name = "ARC Team", email = "ARC.Education@ucl.ac.uk" },
 ]
 classifiers = [
-  # Check the whole list at: https://pypi.org/classifiers/
-  # How mature is this project? Common values are
-  #   3 - Alpha
-  #   4 - Beta
-  #   5 - Production/Stable
   "Development Status :: 3 - Alpha",
-
-  # Indicate who your project is intended for
   "Intended Audience :: Science/Research",
   "Topic :: Scientific/Engineering :: Bio-Informatics",
-  # Pick your license as you wish (see also "license" above)
   "License :: OSI Approved :: BSD License",
-  # Specify the Python versions you support here.
   "Programming Language :: Python :: 3",
   "Programming Language :: Python :: 3.9",
-  "Programming Language :: Python :: 3.13",
-
-  # To avoid uploading it to PiPy
+  "Programming Language :: Python :: 3.12",
   "Private :: Do Not Upload",
 ]
 dependencies = [
-    "numpy",
+  "numpy",
 ]
-@@ -21,3 +53,8 @@ dev = [
-    "pytest >= 8",
-    "pytest-cov",
+
+[project.optional-dependencies]
+dev = [
+  "pytest >= 8",
+  "pytest-cov",
 ]
 
 [project.urls]
