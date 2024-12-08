@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sagittal_average"
+version = "0.1.0"
+description = "A package to compute sagittal brain averages"
+authors = [
+    { name = "Your Name", email = "your_email@example.com" }
+]
+license = { text = "MIT" }
+dependencies = []
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent"
+]
